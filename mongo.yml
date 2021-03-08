@@ -1,0 +1,10 @@
+version: '3'
+services: 
+        database:
+                image: 'mongo'
+                environment: 
+                        - MONGO_INITDB_DATABASE=omnistack
+                        - MONGO_INITDB_ROOT=salomao
+                        - MONGO_INITDB_PASSWORD=salomao
+                ports:
+                        - '27017-27019:27017-27019'
